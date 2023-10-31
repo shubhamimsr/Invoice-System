@@ -1,0 +1,171 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./images/bg5.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.list-group a {
+  padding: 1.2rem 1.2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.list-group {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.list-group-item {
+  border: none;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+.card {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+.list-group-item:hover {
+  background-color: navy;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: "0 2px 6px 0  rgba(0, 0, 0, 0.4)"
+}
+
+
+
+.modal-body table td {
+  padding-top: 1.5rem;
+}
+
+.invoice table td {
+  padding-top: 1.5rem;
+}
+
+.table th {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.table td {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.invoicebilltitle {
+  display: none;
+}
+
+.invoice input[type=text],
+input[type=date],
+select {
+  padding: 8px;
+}
+
+input[type=button],
+button {
+  background-color: rgba(63, 152, 234, 0.55);
+  color: white;
+  padding: 0.5rem;
+}
+
+button:hover {
+  background: #74ea45;
+  color: black;
+}
+
+@media print {
+  body {
+    margin-top: 10px !important;
+    margin: 0;
+    padding: 0;
+    color: black !important;
+    background-color: white !important;
+    min-height: 1100px !important;
+    border: 1px solid black !important;
+
+  }
+
+  #GFG {
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 780px !important;
+    height: auto !important;
+    border: none !important;
+
+  }
+
+  .btnback {
+    display: none;
+  }
+
+  .btn .invocieDetails {
+    margin-left: auto !important;
+  }
+
+  .invoicebilltitle {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+  }
+
+  .table {
+    border: 1px solid black;
+  }
+
+  .table th {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .table td {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .main {
+    height: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.25rem;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  .sidemenu,
+  .navbar,
+  .backbtn,
+  .printbtn {
+    display: none !important;
+  }
+}
